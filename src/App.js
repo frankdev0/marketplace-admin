@@ -5,7 +5,6 @@ import "./App.css";
 // import Home from "./pages/Home/Home";
 import Authentication from "./pages/Authentication/Authentication";
 import BuyersRegistration from "./pages/Authentication/BuyersRegistration";
-import SellersLandingPage from "./pages/SellersLandingPage/SellersLandingPage";
 import SellersRegistration from "./pages/Authentication/SellersRegistration";
 import PhoneVerification from "./pages/Authentication/PhoneVerification";
 import ForgotPassword from "./pages/Authentication/ForgotPassword";
@@ -44,10 +43,7 @@ function App() {
             path="/sellers-registration"
             element={<SellersRegistration />}
           />
-          <Route
-            path="/sellers-landing-page"
-            element={<SellersLandingPage />}
-          />
+
           <Route path="/product-listing" element={<ProductListing />} />
           <Route path="/phone-verification" element={<PhoneVerification />} />
           <Route path="/verify-email/:email" element={<EmailVerification />} />
