@@ -66,7 +66,7 @@ function App() {
           <Route path="/buyer/rfqs" element={<BuyersRfqs />} />
           <Route path="/buyer/settings" element={<BuyersSettings />} /> */}
 
-          <Route path="/seller/dashboard" element={<SellersDashboard />} />
+          <Route path="/" element={<SellersDashboard />} />
           <Route
             path="/seller/message-center"
             element={<SellersMessageCenter />}
