@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Iconly } from "react-iconly";
 import "../Dashboard.css";
 import SellersSidebar from "./SellersComponent/SellersSideBar";
 
 const SellersDashboard = () => {
+  const [categories, setCotegeries] = useState("");
   return (
     <div>
       <div className="grid-container">

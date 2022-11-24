@@ -30,6 +30,7 @@ import SellersNewProduct from "./pages/Dashboard/SellersDashboard/SellersNewProd
 import SellersRfqs from "./pages/Dashboard/SellersDashboard/SellersRfqs";
 import SellersSettings from "./pages/Dashboard/SellersDashboard/SellersSettings";
 import EmailVerification from "./pages/Authentication/EmailVerification";
+import Categories from "./pages/Dashboard/SellersDashboard/Categories";
 
 function App() {
   return (
@@ -75,6 +76,7 @@ function App() {
             element={<SellersMessageCenter />}
           />
           <Route path="/seller/orders" element={<SellersOrder />} />
+          <Route path="/categories" element={<Categories />} />
           <Route path="/seller/order-info" element={<SellersOrderInfo />} />
           <Route path="/seller/products" element={<SellersProducts />} />
           <Route path="/seller/new-product" element={<SellersNewProduct />} />
