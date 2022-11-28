@@ -34,88 +34,53 @@ const SellersSidebar = () => {
           </div>
         </div> */}
 
-        <ul class="sidenav__list">
+        <ul className="sidenav__list">
           <Link className="sidenav-link" to="/seller/dashboard">
             <li className="sidenav__list-item">
-              <Iconly
-                className="list_icon"
-                name="Home"
-                set="light"
-                size="small"
-              />
+              <Iconly className="list_icon" name="Home" size="small" />
               Overview
             </li>
           </Link>
           <Link className="sidenav-link" to="/seller/orders">
             <li className="sidenav__list-item">
-              <Iconly
-                className="list_icon"
-                name="People"
-                set="light"
-                size="small"
-              />
+              <Iconly className="list_icon" name="People" size="small" />
               Buyers
             </li>
           </Link>
           <Link className="sidenav-link" to="/seller/orders">
             <li className="sidenav__list-item">
-              <Iconly
-                className="list_icon"
-                name="People"
-                set="light"
-                size="small"
-              />
+              <Iconly className="list_icon" name="People" size="small" />
               Sellers
             </li>
           </Link>
 
           <Link className="sidenav-link" to="/seller/orders">
             <li className="sidenav__list-item">
-              <Iconly
-                className="list_icon"
-                name="Paper"
-                set="light"
-                size="small"
-              />
+              <Iconly className="list_icon" name="Paper" size="small" />
               Transactions
             </li>
           </Link>
           <Link className="sidenav-link" to="/seller/orders">
             <li className="sidenav__list-item">
-              <Iconly
-                className="list_icon"
-                name="Filter"
-                set="light"
-                size="small"
-              />
+              <Iconly className="list_icon" name="Filter" size="small" />
               Category
             </li>
           </Link>
 
           <Link className="sidenav-link" to="/seller/products">
             <li className="sidenav__list-item">
-              <Iconly
-                className="list_icon"
-                name="Category"
-                set="light"
-                size="small"
-              />
+              <Iconly className="list_icon" name="Category" size="small" />
               Product Listings
             </li>
           </Link>
           <Link className="sidenav-link" to="/seller/products">
             <li className="sidenav__list-item">
-              <Iconly
-                className="list_icon"
-                name="Star"
-                set="light"
-                size="small"
-              />
+              <Iconly className="list_icon" name="Star" size="small" />
               Subscriptions
             </li>
           </Link>
 
-          <Link className="sidenav-link" to="/seller/message-center">
+          {/* <Link className="sidenav-link" to="/seller/message-center">
             <li className="sidenav__list-item">
               <Iconly
                 className="list_icon position-relative"
@@ -126,39 +91,24 @@ const SellersSidebar = () => {
               Message Center
               <span className="icon-notification position-absolute"></span>
             </li>
-          </Link>
+          </Link> */}
 
           <Link className="sidenav-link" to="/seller/rfqs">
             <li className="sidenav__list-item">
-              <Iconly
-                className="list_icon"
-                name="Folder"
-                set="light"
-                size="small"
-              />
+              <Iconly className="list_icon" name="Folder" size="small" />
               RFQs
             </li>
           </Link>
           <Link className="sidenav-link" to="/seller/rfqs">
             <li className="sidenav__list-item">
-              <Iconly
-                className="list_icon"
-                name="Chat"
-                set="light"
-                size="small"
-              />
+              <Iconly className="list_icon" name="Chat" size="small" />
               Disputes
             </li>
           </Link>
 
           <Link className="sidenav-link" to="/seller/settings">
             <li className="sidenav__list-item">
-              <Iconly
-                className="list_icon"
-                name="Setting"
-                set="light"
-                size="small"
-              />
+              <Iconly className="list_icon" name="Setting" size="small" />
               Settings
             </li>
           </Link>
@@ -168,7 +118,6 @@ const SellersSidebar = () => {
               <Iconly
                 className="nav-icon"
                 name="Logout"
-                set="line"
                 size="small"
                 style={{ marginRight: "15px" }}
               />
@@ -177,15 +126,10 @@ const SellersSidebar = () => {
           </Link>
         </ul>
 
-        <ul class="sidenav__list mt-auto">
+        <ul className="sidenav__list mt-auto">
           <Link className="sidenav-link" to="/">
             <li className="sidenav__list-item">
-              <Iconly
-                className="list_icon"
-                name="ArrowLeft"
-                set="light"
-                size="small"
-              />
+              <Iconly className="list_icon" name="ArrowLeft" size="small" />
               Marketplace
             </li>
           </Link>
