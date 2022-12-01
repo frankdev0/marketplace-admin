@@ -29,6 +29,7 @@ import SellersNewProduct from "./pages/Dashboard/SellersDashboard/SellersNewProd
 import SellersRfqs from "./pages/Dashboard/SellersDashboard/SellersRfqs";
 import SellersSettings from "./pages/Dashboard/SellersDashboard/SellersSettings";
 import EmailVerification from "./pages/Authentication/EmailVerification";
+import SellersDispute from "./pages/Dashboard/SellersDashboard/SellersDispute";
 import Categories from "./pages/Dashboard/SellersDashboard/Categories";
 
 function App() {
@@ -78,6 +79,7 @@ function App() {
           <Route path="/seller/new-product" element={<SellersNewProduct />} />
           <Route path="/seller/rfqs" element={<SellersRfqs />} />
           <Route path="/seller/settings" element={<SellersSettings />} />
+          <Route path="/seller/dispute" element={<SellersDispute />} />
         </Routes>
       </Router>
     </>

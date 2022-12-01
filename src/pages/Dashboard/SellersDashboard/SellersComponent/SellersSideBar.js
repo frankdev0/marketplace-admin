@@ -99,7 +99,7 @@ const SellersSidebar = () => {
               RFQs
             </li>
           </Link>
-          <Link className="sidenav-link" to="/seller/rfqs">
+          <Link className="sidenav-link" to="/seller/dispute">
             <li className="sidenav__list-item">
               <Iconly className="list_icon" name="Chat" size="small" />
               Disputes
