@@ -3,7 +3,7 @@ import { Iconly } from "react-iconly";
 import { Link } from "react-router-dom";
 import SellersSidebar from "./SellersComponent/SellersSideBar";
 import Avatar from "@mui/material/Avatar";
-import passport from "../../../assets/img/passport.jpg"
+import passport from "../../../assets/img/passport.jpg";
 
 const SellersSettings = () => {
   return (
