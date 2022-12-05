@@ -1,11 +1,12 @@
 import React from "react";
 import { Iconly } from "react-iconly";
 import { Link } from "react-router-dom";
-import SellersSidebar from "./SellersComponent/SellersSideBar";
+
 import Avatar from "@mui/material/Avatar";
 import passport from "../../../assets/img/passport.jpg";
+import SellersSidebar from "../dashboardComponents/SideBar";
 
-const SellersSettings = () => {
+const Settings = () => {
   return (
     <>
       <div>
@@ -148,4 +149,4 @@ const SellersSettings = () => {
   );
 };
 
-export default SellersSettings;
+export default Settings;

@@ -10,7 +10,6 @@ import PhoneVerification from "./pages/Authentication/PhoneVerification";
 import ForgotPassword from "./pages/Authentication/ForgotPassword";
 import Login from "./pages/Authentication/Login";
 import ResetPassword from "./pages/Authentication/ResetPassword";
-import ProductListing from "./pages/ProductListing/ProductListing";
 
 // import BuyersDashboard from "./pages/Dashboard/BuyersDashboard/BuyersDashboard";
 // import BuyersMessageCenter from "./pages/Dashboard/BuyersDashboard/BuyersMessageCenter";
@@ -20,17 +19,18 @@ import ProductListing from "./pages/ProductListing/ProductListing";
 // import BuyersRfqs from "./pages/Dashboard/BuyersDashboard/BuyersRfqs";
 // import BuyersSettings from "./pages/Dashboard/BuyersDashboard/BuyersSettings";
 
-import SellersDashboard from "./pages/Dashboard/SellersDashboard/SellersDashboard";
-import SellersMessageCenter from "./pages/Dashboard/SellersDashboard/SellersMessageCenter";
-import SellersOrder from "./pages/Dashboard/SellersDashboard/SellersOrder";
-import SellersOrderInfo from "./pages/Dashboard/SellersDashboard/SellersOrderInfo";
-import SellersProducts from "./pages/Dashboard/SellersDashboard/SellersProducts";
-import SellersNewProduct from "./pages/Dashboard/SellersDashboard/SellersNewProduct";
-import SellersRfqs from "./pages/Dashboard/SellersDashboard/SellersRfqs";
-import SellersSettings from "./pages/Dashboard/SellersDashboard/SellersSettings";
+import SellersDashboard from "./pages/Dashboard/Dashboard";
+import SellersOrder from "./pages/Dashboard/transaction/SellersOrder";
 import EmailVerification from "./pages/Authentication/EmailVerification";
-import SellersDispute from "./pages/Dashboard/SellersDashboard/SellersDispute";
-import Categories from "./pages/Dashboard/SellersDashboard/Categories";
+import SellersDispute from "./pages/Dashboard/disputes/SellersDispute";
+import Categories from "./pages/Dashboard/categories/Categories";
+import Buyers from "./pages/Dashboard/buyer/Buyers";
+import Sellers from "./pages/Dashboard/sellers/Sellers";
+import SellersSubscription from "./pages/Dashboard/subscription/sellerssubscription/SellersSubscription";
+import Settings from "./pages/Dashboard/settings/Settings";
+import SellersRfqs from "./pages/Dashboard/rfq/SellersRfqs";
+import ProductListing from "./pages/Dashboard/ProductListing/ProductListing";
+import BuyersDispute from "./pages/Dashboard/disputes/BuyersDsipute";
 
 function App() {
   return (
@@ -45,7 +45,7 @@ function App() {
             element={<SellersRegistration />}
           />
 
-          <Route path="/product-listing" element={<ProductListing />} />
+          <Route exact path="product-listing" element={<ProductListing />} />
           <Route path="/phone-verification" element={<PhoneVerification />} />
           <Route path="/verify-email/:email" element={<EmailVerification />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
@@ -68,18 +68,20 @@ function App() {
           <Route path="/buyer/settings" element={<BuyersSettings />} /> */}
 
           <Route path="/" element={<SellersDashboard />} />
+
           <Route
-            path="/seller/message-center"
-            element={<SellersMessageCenter />}
+            exact
+            path="/sellers-subscription"
+            element={<SellersSubscription />}
           />
-          <Route path="/seller/orders" element={<SellersOrder />} />
+          <Route path="/buyers" element={<Buyers />} />
+          <Route path="/sellers" element={<Sellers />} />
+          <Route path="/transactions" element={<SellersOrder />} />
           <Route path="/categories" element={<Categories />} />
-          <Route path="/seller/order-info" element={<SellersOrderInfo />} />
-          <Route path="/seller/products" element={<SellersProducts />} />
-          <Route path="/seller/new-product" element={<SellersNewProduct />} />
-          <Route path="/seller/rfqs" element={<SellersRfqs />} />
-          <Route path="/seller/settings" element={<SellersSettings />} />
-          <Route path="/seller/dispute" element={<SellersDispute />} />
+          <Route exact path="/rfqs" element={<SellersRfqs />} />
+          <Route exact path="settings" element={<Settings />} />
+          <Route path="/sellers-disputes" element={<SellersDispute />} />
+          <Route path="/Buyers-disputes" element={<BuyersDispute />} />
         </Routes>
       </Router>
     </>

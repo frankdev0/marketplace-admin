@@ -12,4 +12,4 @@ code {
     monospace;
 }
 
-@import url(../src/pages/Dashboard/SellersDashboard/SellerSettings.css);
+@import url(../src/pages/Dashboard/settings/SellerSettings.css);

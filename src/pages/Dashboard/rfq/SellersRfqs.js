@@ -1,7 +1,7 @@
 import React from "react";
 import { Iconly } from "react-iconly";
 import { Link } from "react-router-dom";
-import SellersSidebar from "./SellersComponent/SellersSideBar";
+import SellersSidebar from "../dashboardComponents/SideBar";
 
 const SellersRfqs = () => {
   return (

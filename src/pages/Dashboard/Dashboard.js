@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Iconly } from "react-iconly";
-import "../Dashboard.css";
-import SellersSidebar from "./SellersComponent/SellersSideBar";
+import "./Dashboard.css";
+import SellersSidebar from "./dashboardComponents/SideBar";
 
 const SellersDashboard = () => {
   const [categories, setCotegeries] = useState("");

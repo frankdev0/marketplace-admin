@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Iconly } from "react-iconly";
-import "../../Dashboard.css";
-import "./SellerSidebar.css";
+import "../../Dashboard/Dashboard.css";
+import "./Sidebar.css";
 
 const SellersSidebar = () => {
   return (
@@ -35,45 +35,45 @@ const SellersSidebar = () => {
         </div> */}
 
         <ul className="sidenav__list">
-          <Link className="sidenav-link" to="/seller/dashboard">
+          <Link className="sidenav-link" to="/dashboard">
             <li className="sidenav__list-item">
               <Iconly className="list_icon" name="Home" size="small" />
               Overview
             </li>
           </Link>
-          <Link className="sidenav-link" to="/seller/orders">
+          <Link className="sidenav-link" to="/buyers">
             <li className="sidenav__list-item">
               <Iconly className="list_icon" name="People" size="small" />
               Buyers
             </li>
           </Link>
-          <Link className="sidenav-link" to="/seller/orders">
+          <Link className="sidenav-link" to="/sellers">
             <li className="sidenav__list-item">
               <Iconly className="list_icon" name="People" size="small" />
               Sellers
             </li>
           </Link>
 
-          <Link className="sidenav-link" to="/seller/orders">
+          <Link className="sidenav-link" to="/transactions">
             <li className="sidenav__list-item">
               <Iconly className="list_icon" name="Paper" size="small" />
               Transactions
             </li>
           </Link>
-          <Link className="sidenav-link" to="/seller/orders">
+          <Link className="sidenav-link" to="/categories">
             <li className="sidenav__list-item">
               <Iconly className="list_icon" name="Filter" size="small" />
               Category
             </li>
           </Link>
 
-          <Link className="sidenav-link" to="/seller/products">
+          <Link className="sidenav-link" to="/product-listing">
             <li className="sidenav__list-item">
               <Iconly className="list_icon" name="Category" size="small" />
               Product Listings
             </li>
           </Link>
-          <Link className="sidenav-link" to="/seller/products">
+          <Link className="sidenav-link" to="/sellers-subscription">
             <li className="sidenav__list-item">
               <Iconly className="list_icon" name="Star" size="small" />
               Subscriptions
@@ -93,20 +93,20 @@ const SellersSidebar = () => {
             </li>
           </Link> */}
 
-          <Link className="sidenav-link" to="/seller/rfqs">
+          <Link className="sidenav-link" to="/rfqs">
             <li className="sidenav__list-item">
               <Iconly className="list_icon" name="Folder" size="small" />
               RFQs
             </li>
           </Link>
-          <Link className="sidenav-link" to="/seller/dispute">
+          <Link className="sidenav-link" to="/buyers-disputes">
             <li className="sidenav__list-item">
               <Iconly className="list_icon" name="Chat" size="small" />
               Disputes
             </li>
           </Link>
 
-          <Link className="sidenav-link" to="/seller/settings">
+          <Link className="sidenav-link" to="/settings">
             <li className="sidenav__list-item">
               <Iconly className="list_icon" name="Setting" size="small" />
               Settings

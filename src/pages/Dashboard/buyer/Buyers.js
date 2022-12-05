@@ -1,47 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { Iconly } from "react-iconly";
-import "../Dashboard.css";
-import SellersSidebar from "./SellersComponent/SellersSideBar";
-import { axios } from "../../../components/baseUrl";
+import SellersSidebar from "../dashboardComponents/SideBar";
 
-const Categories = () => {
-  const [categories, setCategories] = useState([]);
-  const [users, setUsers] = useState([]);
-
-  const getCategory = async () => {
-    try {
-      axios.get("/category").then((response) => {
-        console.log(response.data);
-        setCategories(response.data.data);
-        // setLoading(true);
-      });
-    } catch (error) {
-      console.log(error.response.data.erros);
-    }
-  };
-  const getUsers = async () => {
-    try {
-      axios.get("/auth/users").then((response) => {
-        console.log(response.data);
-        setUsers(response.data.data);
-        // setLoading(true);
-      });
-    } catch (error) {
-      console.log(error.response.data.erros);
-    }
-  };
-
-  useEffect(() => {
-    getUsers();
-  }, []);
-
-  useEffect(() => {
-    getCategory();
-  }, []);
-
+const Buyers = () => {
   return (
-    <div>
+    <>
       <div className="grid-container">
         <header className="header">
           <div className="header__message">
@@ -76,54 +40,34 @@ const Categories = () => {
             </div>
           </div>
         </header>
-
         <SellersSidebar />
 
         <main className="main">
           <h1 className="section-title">Activity Summary</h1>
-          <div className="main-overview">
-            <div className="overview-card">
+          <div className="row main-overview">
+            <div className="col-4 overview-card">
               <div>
-                <h2>Total Transactions</h2>
+                <h2>Total Buyers</h2>
                 {/* <p>Detailed transaction history is on the order page</p> */}
-                <div className="d-flex justify-content-between mt-4">
-                  <h3>$125,000</h3>
-                </div>
-              </div>
-            </div>
-            <div className="overview-card">
-              <div>
-                <h2>Total Orders</h2>
-                {/* <p>Detailed transaction history is on the order page</p> */}
-                <div className="d-flex justify-content-between mt-4">
-                  <h3>22</h3>
-                </div>
-              </div>
-            </div>
-            <div className="overview-card">
-              <div>
-                <h2>Total Quotes</h2>
-                {/* <p>Detailed transaction history is on the order page</p> */}
-                <div className="d-flex justify-content-between mt-4">
-                  <h3>5</h3>
+                <div class="d-flex justify-content-between mt-4">
+                  <h3>10,000</h3>
                 </div>
               </div>
             </div>
           </div>
 
-          <h1 className="section-title">Latest Orders</h1>
+          <h1 className="section-title">All Buyers</h1>
           <div className="main-overview">
             <div className="overview-card no-padding">
-              <div className="table-responsive">
-                <table className="table table-striped">
+              <div class="table-responsive">
+                <table class="table table-striped">
                   <thead>
                     <tr>
-                      <th scope="col">Order No</th>
-                      <th scope="col">Product Info</th>
-                      <th scope="col">Product Cost</th>
-                      <th scope="col">Shipping Terms</th>
-                      <th scope="col">Payment Terms</th>
-                      <th scope="col">Status</th>
+                      <th scope="col">S/N</th>
+                      <th scope="col">Full Name</th>
+                      <th scope="col">Phone Number</th>
+                      <th scope="col">No of Orders</th>
+                      <th scope="col">Action</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -144,7 +88,7 @@ const Categories = () => {
                         </div>
                       </td>
                       <td>USD 40,000</td>
-                      <td>FOB</td>
+
                       <td>Letter of Credit</td>
                       <td>
                         <div className="text-warning">Pending</div>
@@ -167,7 +111,7 @@ const Categories = () => {
                         </div>
                       </td>
                       <td>USD 40,000</td>
-                      <td>CIF</td>
+
                       <td>Letter of Credit</td>
                       <td>
                         <div className="text-primary">Processing</div>
@@ -190,7 +134,6 @@ const Categories = () => {
                         </div>
                       </td>
                       <td>XAF 20,000,000</td>
-                      <td>Local Delivery</td>
                       <td>Letter of Credit</td>
                       <td>
                         <div className="text-success">Shipped</div>
@@ -213,7 +156,6 @@ const Categories = () => {
                         </div>
                       </td>
                       <td>USD 40,000</td>
-                      <td>CFR</td>
                       <td>Letter of Credit</td>
                       <td>
                         <div className="text-success">Delivered</div>
@@ -236,7 +178,6 @@ const Categories = () => {
                         </div>
                       </td>
                       <td>USD 40,000</td>
-                      <td>CFR</td>
                       <td>Letter of Credit</td>
                       <td>
                         <div className="text-success">Delivered</div>
@@ -259,7 +200,6 @@ const Categories = () => {
                         </div>
                       </td>
                       <td>USD 40,000</td>
-                      <td>CFR</td>
                       <td>Letter of Credit</td>
                       <td>
                         <div className="text-success">Delivered</div>
@@ -272,8 +212,8 @@ const Categories = () => {
           </div>
         </main>
       </div>
-    </div>
+    </>
   );
 };
 
-export default Categories;
+export default Buyers;

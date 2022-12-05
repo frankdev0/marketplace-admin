@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Iconly } from "react-iconly";
-import SellersSidebar from "./SellersComponent/SellersSideBar";
+import SellersSidebar from "../dashboardComponents/SideBar";
 
 const SellersOrder = () => {
   return (
@@ -86,8 +86,9 @@ const SellersOrder = () => {
                       <th scope="col">Product Info</th>
                       <th scope="col">Product Cost</th>
                       <th scope="col">Shipping Terms</th>
-                      <th scope="col">Payment Terms</th>
+
                       <th scope="col">Status</th>
+                      <th scope="col">Action</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -109,10 +110,10 @@ const SellersOrder = () => {
                       </td>
                       <td>USD 40,000</td>
                       <td>FOB</td>
-                      <td>Letter of Credit</td>
                       <td>
                         <div className="text-warning">Pending</div>
                       </td>
+                      <td>view</td>
                     </tr>
                     <tr>
                       <td>0123456543</td>
@@ -132,10 +133,10 @@ const SellersOrder = () => {
                       </td>
                       <td>USD 40,000</td>
                       <td>CIF</td>
-                      <td>Letter of Credit</td>
                       <td>
                         <div className="text-primary">Processing</div>
                       </td>
+                      <td>view</td>
                     </tr>
                     <tr>
                       <td>0123456543</td>
@@ -155,10 +156,10 @@ const SellersOrder = () => {
                       </td>
                       <td>XAF 20,000,000</td>
                       <td>Local Delivery</td>
-                      <td>Letter of Credit</td>
                       <td>
                         <div className="text-success">Shipped</div>
                       </td>
+                      <td>view</td>
                     </tr>
                     <tr>
                       <td>0123456543</td>
@@ -178,10 +179,10 @@ const SellersOrder = () => {
                       </td>
                       <td>USD 40,000</td>
                       <td>CFR</td>
-                      <td>Letter of Credit</td>
                       <td>
                         <div className="text-success">Delivered</div>
                       </td>
+                      <td>view</td>
                     </tr>
                     <tr>
                       <td>0123456543</td>
@@ -201,10 +202,10 @@ const SellersOrder = () => {
                       </td>
                       <td>USD 40,000</td>
                       <td>CFR</td>
-                      <td>Letter of Credit</td>
                       <td>
                         <div className="text-success">Delivered</div>
                       </td>
+                      <td>view</td>
                     </tr>
                     <tr>
                       <td>0123456543</td>
@@ -224,10 +225,10 @@ const SellersOrder = () => {
                       </td>
                       <td>USD 40,000</td>
                       <td>CFR</td>
-                      <td>Letter of Credit</td>
                       <td>
                         <div className="text-success">Delivered</div>
                       </td>
+                      <td>view</td>
                     </tr>
                   </tbody>
                 </table>
