@@ -10,7 +10,7 @@ const SellersRfqs = () => {
         <div className="grid-container">
           <header className="header">
             <div className="header__message">
-              <h2>My Products</h2>
+              <h2>My RFQs</h2>
             </div>
             <div className="header__search">
               <form>
@@ -49,7 +49,7 @@ const SellersRfqs = () => {
             <div className="main-overview">
               <div className="overview-card">
                 <div>
-                  <h2>Total Orders</h2>
+                  <h2>Total RFQ</h2>
                   {/* <p>Detailed transaction history is on the order page</p> */}
                   <div class="d-flex justify-content-between mt-4">
                     <h3>10</h3>
@@ -58,7 +58,7 @@ const SellersRfqs = () => {
               </div>
               <div className="overview-card">
                 <div>
-                  <h2>Ongoing Orders</h2>
+                  <h2>Open RFQ</h2>
                   {/* <p>Detailed transaction history is on the order page</p> */}
                   <div class="d-flex justify-content-between mt-4">
                     <h3>22</h3>
@@ -67,7 +67,7 @@ const SellersRfqs = () => {
               </div>
               <div className="overview-card">
                 <div>
-                  <h2>Completed Orders</h2>
+                  <h2>Processing RFQ</h2>
                   {/* <p>Detailed transaction history is on the order page</p> */}
                   <div class="d-flex justify-content-between mt-4">
                     <h3>5</h3>
